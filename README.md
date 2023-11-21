@@ -4,7 +4,9 @@ you must read this repo!
 
 
 <p align="center">
-  <video src="slow.mp4" alt="IoT" width="150" height="250"/>
+  <video width="320" height="240" controls>
+  <source src="slow.mp4" type="video/mp4">
+  </video>
 </p>
 
 
