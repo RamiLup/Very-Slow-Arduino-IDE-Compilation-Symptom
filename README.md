@@ -4,10 +4,10 @@
 <br />
 <br />
 
+If you don't have time to read it all, here is a TL;DR [Go to Conclusion:](#Conclusion)
 
-[Go to Conclusion:](#Conclusion)
-
-
+<br />
+<br />
 
 <div align="center">
       <a href="https://www.youtube.com/watch?v=Y6VHRLoNK5Y">
