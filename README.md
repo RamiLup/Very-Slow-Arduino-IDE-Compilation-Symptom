@@ -5,7 +5,7 @@
 <br />
 
 
-[Go to Conclusion:](#Conclusion:)
+[Go to Conclusion:](#My-Conclusion)
 
 
 
@@ -101,7 +101,8 @@ and not on the fast virtual machine.
 The paradox here is that the installation of Visual Micro pluging for Arduino relies on the installation of Arduino IDE
 and its libraries, which are already installed on the computer.
 
-# Conclusion:
+# My-Conclusion
+
 Most likely the problem is in the Arduino IDE settings or there is a bug in the two versions I have checked.
 The compilation process using the Arduino IDE is not performed optimally for some Arduino boards / libraries. 
 Maybe there are some configuration files which I have missed in the Arduino IDE settings which can configure the 
