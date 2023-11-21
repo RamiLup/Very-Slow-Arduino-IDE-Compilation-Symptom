@@ -108,8 +108,11 @@ The compilation process using the Arduino IDE is not performed optimally for som
 Maybe there are some configuration files which I have missed in the Arduino IDE settings which can configure the 
 compliation prosses to be much more efficient ?
 
-Therefore, my solution for anyone who encounters the same phenomenon of a long compilation process in Arduino IDE is to work:
-Visual studio from [microsoft.com](https://visualstudio.microsoft.com/) , and add the Arduino plugin form visual micro from [https://www.visualmicro.com and Visual Studio ](https://www.visualmicro.com/)https://www.visualmicro.com/
+## Therefore, here is my solution for anyone who encounters the same phenomenon of very long compilation time 
+## using the Arduino IDE:
+
+# First, install the **Visual Studio** [microsoft.com](https://visualstudio.microsoft.com/) and then add the Arduino plugin 
+# **Visual Micro** [https://www.visualmicro.com and Visual Studio ](https://www.visualmicro.com/)
 
 ![image](https://github.com/RamiLup/Very-Slow-Arduino-IDE-Compilation-Symptom/assets/42478562/fc378d67-f6cd-43cf-8262-48bfe1d60dd7)
 
