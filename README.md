@@ -5,7 +5,7 @@
 <br />
 
 
-[Go to Real Cool Heading section](#Conclusion:)
+[Go to Conclusion:](#Conclusion:)
 
 
 
