@@ -1,17 +1,28 @@
 # Very-Slow-Arduino-IDE-Compilation-Symptom ?
-If It takes too long to compile a small program using Arduino IDE versio 1.8.x or 2.x
-you must read this repo!
+## If It takes too long to compile a small program using Arduino IDE versio 1.8.x or 2.0 
+## you must read this repo!
+<br />
+<br />
 
 
-<p align="center">
-  [![IMAGE ALT TEXT](http://img.youtube.com/vi/Y6VHRLoNK5Y/0.jpg)](http://www.youtube.com/watch?v=Y6VHRLoNK5Y "Video Title")
-</p>
+[Go to Real Cool Heading section](#real-cool-heading)
 
 
+
+<div align="center">
+      <a href="https://www.youtube.com/watch?v=Y6VHRLoNK5Y">
+     <img 
+      src="https://img.youtube.com/vi/Y6VHRLoNK5Y/0.jpg" 
+      alt="Everything Is AWESOME" 
+      style="width:45%;">
+      </a>
+    </div>
+<br />
+<br />
+    
 Over the past several years, I have worked with a diverse range of Arduino components for my projects and sensor applications.
-Recently, I have encountered a disturbing issue where the compilation process can occasionally take an unreasonably time and
-it might be more than 8 minutes while running the Arduino IDE from a stong i7 computer with 16GB of RAM and a fast SSD drive
-which is frustrating and does not make sense!
+Recently, I have encountered a disturbing issue where the compilation process can take an unreasonably time while running the 
+Arduino IDE from a stong i7 computer with 16GB of RAM and a fast SSD drive which is frustrating and does not make any sense!
 
 At first, I thought that the compiling process required a long time due to the complexity of my project - and thus the complexity / length
 of the code, which demands long processing time, but it turned out that even for short or simple code, the compiling process is long.
@@ -24,18 +35,18 @@ Therefore, replacing the selected board type because Arduino IDE is slow is not 
 
 To solve the problem of long compilation time, I made a number of attempts to first understand the cause.
 
-1st test:
+### 1st test:
 I began by stopping the antivirus software, suspecting it might be the reason behind the slow compilation time. 
 However, this did not resolve the issue.
 
 Next, since I was unsure whether stopping the antivirus was effective, I completely uninstalled it. This did lead to 
 some improvement, but compilation still took over eight minutes.
 
-2nd test:
+### 2nd test:
 Was to completely uninstall the installation of Arduino 2.2.1 and re-install the previous version 1.8.19.
 However, it turned out that the phenomenon of the long compilation process exists with both versions of Arduino IDE.
 
-3rd test:
+### 3rd test:
 Would a powerful and fast computer solve the problem? 
 I tried to check how much the computer hardware affects the compilation speed. 
 Since I didn't have a powerful computer available, I set up a dedicated cloud computer with 8 cores and 32GB of memory. 
@@ -58,9 +69,8 @@ File>Settings>Preferences>Show verbose output during compilation
 ![image](https://github.com/RamiLup/Very-Slow-Arduino-IDE-Compilation-Symptom/assets/42478562/7b759cbf-0c10-4780-9aa4-4cb3605197d0)
 
 
-
-What I saw after setting that option, that the Arduino is not stuck. It is working really hard to go over all the files in 
-some of the libraries.
+It's pretty clear now that the Arduino did not stop working. It is working really hard to go over all the files in 
+some of the Arduino libraries.
 
 Here is a short example from the huge log:
 
@@ -73,25 +83,27 @@ Here is a short example from the huge log:
 ![image](https://github.com/RamiLup/Very-Slow-Arduino-IDE-Compilation-Symptom/assets/42478562/08a564e8-dfcd-4de0-9a8b-94a8fbcf74c2)
 
 
-This is very strange. The compiler is not supposed to verify all files.
-But it might do so in the first compilation process of the project, After that it should only go over files that have been modified.
+This is very strange. The compiler is not supposed to verify hundreds of library files each time a compilation process is performed.
+Even so it might do it  at the first compilation process of the project, and after that it should only go over files which have been modified.
 
-In other words, even if the first compilation process might take ~8 minutes, the second it should be much shorter.
+In other words, even if the first compilation process might take ~8 minutes, the second should be much shorter.
 
-At this testing state, there were not many directions and options left, so I started to think that there is a problem in the Arduino IDE software...
+At this point, and after all the tests I did, there wasn't much left to test, so I thought that there might be a problem in the Arduino IDE software...
 
 
-**The fourth and last experiment:**
-My last test was very short. I have added the Visual Micro plugin to the Visual Studio development environment. 
+### **The fourth and the last experiment:**
+My last test was very short. I have added the Visual Micro Arduino plugin to the Visual Studio development environment. 
 So far, I haven't used Visual Studio for Arduino projects.
 
 Performing a compilation process for the same code endwed very fast! it took less than 30 seconds using my computer, 
 and not on the fast virtual machine.
 
+#Real Cool Heading
+
 The paradox here is that the installation of Visual Micro pluging for Arduino relies on the installation of Arduino IDE
 and its libraries, which are already installed on the computer.
 
-Conclusion:
+# Conclusion:
 Most likely the problem is in the Arduino IDE settings or there is a bug in the two versions I have checked.
 The compilation process using the Arduino IDE is not performed optimally for some Arduino boards / libraries. 
 Maybe there are some configuration files which I have missed in the Arduino IDE settings which can configure the 
