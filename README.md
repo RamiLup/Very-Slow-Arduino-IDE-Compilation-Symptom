@@ -98,7 +98,7 @@ So far, I haven't used Visual Studio for Arduino projects.
 Performing a compilation process for the same code endwed very fast! it took less than 30 seconds using my computer, 
 and not on the fast virtual machine.
 
-#Real Cool Heading
+# Real Cool Heading
 
 The paradox here is that the installation of Visual Micro pluging for Arduino relies on the installation of Arduino IDE
 and its libraries, which are already installed on the computer.
