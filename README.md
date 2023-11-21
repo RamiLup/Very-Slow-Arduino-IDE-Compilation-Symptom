@@ -48,7 +48,9 @@ which will show detailed comments while the compilation progress is running.
 ```
 File>Settings>Preferences>Show verbose output during compilation
 ```
-![image](https://github.com/RamiLup/Very-Slow-Arduino-IDE-Compilation-Symptom/assets/42478562/06793b3b-fd58-4453-b24c-e0c1f1a9fadb)
+
+![image](https://github.com/RamiLup/Very-Slow-Arduino-IDE-Compilation-Symptom/assets/42478562/7b759cbf-0c10-4780-9aa4-4cb3605197d0)
+
 
 
 What I saw after setting that option, that the Arduino is not stuck. It is working really hard to go over all the files in 
