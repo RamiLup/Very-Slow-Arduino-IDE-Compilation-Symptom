@@ -2,6 +2,10 @@
 If It takes too long to compile a small program using Arduino IDE versio 1.8.x or 2.x
 you must read this repo!
 
+
+
+
+
 Over the past several years, I have worked with a diverse range of Arduino components for my projects and sensor applications.
 Recently, I have encountered a disturbing issue where the compilation process can occasionally take an unreasonably time and
 it might be more than 8 minutes while running the Arduino IDE from a stong i7 computer with 16GB of RAM and a fast SSD drive
