@@ -3,7 +3,9 @@ If It takes too long to compile a small program using Arduino IDE versio 1.8.x o
 you must read this repo!
 
 
-
+<p align="center">
+  <video src="slow.mp4" alt="IoT" width="150" height="250"/>
+</p>
 
 
 Over the past several years, I have worked with a diverse range of Arduino components for my projects and sensor applications.
