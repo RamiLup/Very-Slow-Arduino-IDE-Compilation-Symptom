@@ -70,7 +70,7 @@ Here is a short example from the huge log:
 This is very strange. The compiler is not supposed to verify all files.
 But it might do so in the first compilation process of the project, After that it should only go over files that have been modified.
 
-In other words, even if the first compilation process night take 8 minutes, the second it should be much shorter.
+In other words, even if the first compilation process might take ~8 minutes, the second it should be much shorter.
 
 At this testing state, there were not many directions and options left, so I started to think that there is a problem in the Arduino IDE software...
 
