@@ -56,19 +56,21 @@ some of the libraries.
 
 Here is a short example from the huge log:
 
-'''
+```
+
 "C:\\Users\\RAM\\AppData\\Local\\Arduino15\\packages\\esp32\\tools\\xtensa-esp32s3-elf-gcc\\gcc8_4_0-esp-2021r2-patch3/bin/xtensa-esp32s3-elf-g++" -DHAVE_CONFIG_H "-DMBEDTLS_CONFIG_FILE=\"mbedtls/esp_config.h\"" -DUNITY_INCLUDE_CONFIG_H -DWITH_POSIX -D_GNU_SOURCE "-DIDF_VER=\"v4.4.1-1-gb8050b365e\"" -DESP_PLATFORM -D_POSIX_READER_WRITER_LOCKS "-IC:\\Users\\RAM\\AppData\\Local\\Arduino15\\packages\\esp32\\hardware\\esp32\\2.0.3/tools/sdk/esp32s3/include/config" "-IC:\\Users\\RAM\\AppData\\Local\\Arduino15\\packages\\esp32\\hardware\\esp32\\2.0.3/tools/sdk/esp32s3/include/esp_hw_support/include/soc/esp32s3" "-IC:\\Users\\RAM\\AppData\\Local\\Arduino15\\packages\\esp32\\hardware\\esp32\\2.0.3/tools/sdk/esp32s3/include/spi_flash/include" "-IC:\\Users\\RAM\\AppData\\Local\\Arduino15\\packages\\esp32\\hardware\\esp32\\2.0.3/tools/sdk/esp32s3/include/bootloader_support/include" "-IC:\\Users\\RAM\\AppData\\Local\\Arduino15\\packages\\esp32\\hardware\\esp32\\2.0.3/tools/sdk/esp32s3/include/nvs_flash/include" "-IC:\\Users\\RAM\\AppData\\Local\\Arduino15\\packages\\esp32\\hardware\\esp32\\2.0.3/tools/sdk/esp32s3/include/pthread/include" "-IC:\\Users\\RAM\\AppData\\Local\\Arduino15\\packages\\esp32\\hardware\\esp32\\2.0.3/tools/sdk/esp32s3/include/esp-dsp/modules/windows/blackman_nuttall/include" "-IC:\\Users\\RAM\\AppData\\Local\\Arduino15\\packages\\esp32\\hardware\\esp32\\2.0.3/tools/sdk/esp32s3/include/esp-sr/esp-tts/esp_tts_chinese/include" "-IC:\\Users\\RAM\\AppData\\Local\\Arduino15\\packages\\esp32\\hardware\\esp32\\2.0.3/tools/sdk/esp32s3/include/esp-sr/include/esp32s3" "-IC:\\Users\\RAM\\AppData\\Local\\Arduino15\\packages\\esp32\\hardware\\esp32\\2.0.3/tools/sdk/esp32s3/include/esp32-camera/driver/include" "-IC:\\Users\\RAM\\AppData\\Local\\Arduino15\\packages\\esp32\\hardware\\esp32\\2.0.3/tools/sdk/esp32s3/include/esp32-camera/conversions/include" "-IC:\\Users\\RAM\\AppData\\Local\\Arduino15\\packages\\esp32\\hardware\\esp32\\2.0.3/tools/sdk/esp32s3/include/fb_gfx/include" "-IC:\\Users\\RAM\\AppData\\Local\\Arduino15\\packages\\esp32\\hardware\\esp32\\2.0.3/tools/sdk/esp32s3/qspi_opi/include" -mlongcalls -ffunction-sections -fdata-sections -Wno-error=unused-function -Wno-error=unused-variable -Wno-error=deprecated-declarations -Wno-unused-parameter -Wno-sign-compare -ggdb -Os -freorder-blocks -Wwrite-strings -fstack-protector -fstrict-volatile-bitfields -Wno-error=unused-but-set-variable -fno-jump-tables -fno-tree-switch-conversion -std=gnu++11 -fexceptions -fno-rtti -c -w -x c++ -E -CC -DF_CPU=240000000L -DARDUINO=10819 -DARDUINO_ESP32S3_DEV -DARDUINO_ARCH_ESP32 "-DARDUINO_BOARD=\"ESP32S3_DEV\"" "-DARDUINO_VARIANT=\"esp32s3\"" -DARDUINO_PARTITION_default -DESP32 -DCORE_DEBUG_LEVEL=0 -DARDUINO_RUNNING_CORE=1 -DARDUINO_EVENT_RUNNING_CORE=1 -DBOARD_HAS_PSRAM -DARDUINO_USB_MODE=1 -DARDUINO_USB_CDC_ON_BOOT=0 -DARDUINO_USB_MSC_ON_BOOT=0 -DARDUINO_USB_DFU_ON_BOOT=0 "@C:\\Users\\RAM\\AppData\\Local\\Temp\\arduino_build_113463/build_opt.h" "-IC:\\Users\\RAM\\AppData\\Local\\Arduino15\\packages\\esp32\\hardware\\esp32\\2.0.3\\cores\\esp32" "-IC:\\Users\\RAM\\AppData\\Local\\Arduino15\\packages\\esp32\\hardware\\esp32\\2.0.3\\variants\\esp32s3" "-IC:\\Users\\RAM\\Documents\\Arduino\\libraries\\Wire\\src" "-IC:\\Users\\RAM\\Documents\\Arduino\\libraries\\SPI\\src" "-IC:\\Users\\RAM\\Documents\\Arduino\\libraries\\lvgl\\src" "-IC:\\Users\\RAM\\Documents\\Arduino\\libraries\\GFX_Library_for_Arduino\\src" "-IC:\\Users\\RAM\\Documents\\Arduino\\libraries\\gt911-arduino-main" "C:\\Users\\RAM\\Documents\\Arduino\\libraries\\lvgl\\src\\draw\\stm32_dma2d\\lv_gpu_stm32_dma2d.c" -o nul
-'''
+
+```
 
 ![image](https://github.com/RamiLup/Very-Slow-Arduino-IDE-Compilation-Symptom/assets/42478562/08a564e8-dfcd-4de0-9a8b-94a8fbcf74c2)
 
 
-This is very strange. The compiler is not supposed to verify all files. (Actually, it might do so in the first compilation process of the project. 
-After that, it should only go over files that have been modified.)"
+This is very strange. The compiler is not supposed to verify all files.
+But it might do so in the first compilation process of the project, After that it should only go over files that have been modified.
 
 In other words, even if the first compilation process night take 8 minutes, the second it should be much shorter.
 
-At this testing state, there were not many directions and options left, so I started to think that there is a problem in the Arduino IDE software.
+At this testing state, there were not many directions and options left, so I started to think that there is a problem in the Arduino IDE software...
 
 
 **The fourth and last experiment:**
@@ -90,6 +92,7 @@ compliation prosses to be much more efficient ?
 Therefore, my solution for anyone who encounters the same phenomenon of a long compilation process in Arduino IDE is to work:
 Visual studio from [microsoft.com](https://visualstudio.microsoft.com/) , and add the Arduino plugin form visual micro from [https://www.visualmicro.com and Visual Studio ](https://www.visualmicro.com/)https://www.visualmicro.com/
 
+![image](https://github.com/RamiLup/Very-Slow-Arduino-IDE-Compilation-Symptom/assets/42478562/fc378d67-f6cd-43cf-8262-48bfe1d60dd7)
 
 
 
