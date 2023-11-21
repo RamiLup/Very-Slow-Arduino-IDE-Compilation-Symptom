@@ -5,7 +5,7 @@ you must read this repo!
 
 <p align="center">
   <video width="320" height="240" controls>
-  <source src="slow.mp4" type="video/mp4">
+  <source src="[slow.mp4](https://github.com/RamiLup/Very-Slow-Arduino-IDE-Compilation-Symptom/blob/main/slow.mp4)" type="video/mp4">
   </video>
 </p>
 
