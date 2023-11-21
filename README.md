@@ -4,7 +4,7 @@
 <br />
 <br />
 
-If you don't have time to read it all, here is a TL;DR [Conclusion:](#Conclusion)
+ [If you don't have time to read it all, here is a TL;DR](#Conclusion)
 
 <br />
 <br />
