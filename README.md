@@ -1,5 +1,5 @@
 # Very-Slow-Arduino-IDE-Compilation-Symptom ?
-## If It takes too long to compile a small program using Arduino IDE versio 1.8.x or 2.0 
+## If It takes too long to compile a small program using Arduino IDE version 1.8.x or 2.x
 ## you must read this repo!
 <br />
 <br />
