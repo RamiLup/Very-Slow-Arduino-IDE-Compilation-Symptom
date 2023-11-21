@@ -91,7 +91,7 @@ In other words, even if the first compilation process might take ~8 minutes, the
 At this point, and after all the tests I did, there wasn't much left to test, so I thought that there might be a problem in the Arduino IDE software...
 
 
-### **The fourth and the last experiment:**
+### **The fourth and the last test:**
 My last test was very short. I have added the Visual Micro Arduino plugin to the Visual Studio development environment. 
 So far, I haven't used Visual Studio for Arduino projects.
 
