@@ -138,6 +138,7 @@ compilation process much more efficient?
 
 ![image](https://github.com/RamiLup/Very-Slow-Arduino-IDE-Compilation-Symptom/assets/42478562/fc378d67-f6cd-43cf-8262-48bfe1d60dd7)
 
+### NOTE:
 The first compilation process can still take longer, but all the others
 shall take the minimum time needed.
 
